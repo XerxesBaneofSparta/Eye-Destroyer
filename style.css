@@ -1,0 +1,121 @@
+body {
+    background-color: #FFFFFF;
+background-image: linear-gradient(256deg, #6284FF 0%, #ffffffde 50%, rgb(248, 26, 26) 100%);
+
+}
+
+p, h2 {
+    color:rgb(43, 255, 0); 
+    text-align:center;
+    font-family:fantasy, papyrus;
+    font-size:20px;
+}
+
+h1 {
+    color:black;
+    text-align:center;
+    font-family:sans-serif;
+    font-size:30px;
+}
+
+h3 {
+color:rgb(14, 14, 14);
+text-align:center;
+font-family:sans-serif;
+font-size:35px;
+text-shadow: 4px 4px;
+}
+
+ div {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  }
+ 
+  .neonText {
+    animation: flicker 1.5s infinite alternate;
+    color: rgb(250, 141, 141);
+  }
+
+  @keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px rgb(255, 0, 0),
+        0 0 11px rgb(255, 0, 0),
+        0 0 19px rgb(255, 0, 0),
+        0 0 40px #ff1e00,
+        0 0 80px #ff1e00,
+        0 0 90px #ff1e00,
+        0 0 100px #ff1e00,
+        0 0 150px #ff1e00;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+  
+  .buttonText {
+    color:rgb(0, 255, 55);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .pageTwo {
+    display:flex;
+    justify-content:center;
+    align-items:center
+  }
+
+  .github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+
+    0%,
+    100% {
+        transform: rotate(0)
+    }
+
+    20%,
+    60% {
+        transform: rotate(-25deg)
+    }
+
+    40%,
+    80% {
+        transform: rotate(10deg)
+    }
+}
+
+@media (max-width:500px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+    }
+}
+
+::selection {
+    background: #d400ff; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #00fff2; /* Gecko Browsers */
+  }
+
+
+
